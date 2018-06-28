@@ -17,6 +17,7 @@ namespace ContactManagement.Lib
             _commonLogFileName = String.Empty;
             _errorLogFileName = String.Empty;
 
+
         }
 
         public static Logger GetLoggerObject(string logFileName, string errorLogFileName)
