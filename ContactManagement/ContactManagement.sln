@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManagement.Web", "ContactManagement.Web\ContactManagement.Web.csproj", "{50D836E5-BCCF-4B6E-A16A-C53A46B64F2C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManagement.Service", "ContactManagement.Service\ContactManagement.Service.csproj", "{8CEC6190-11F4-4572-91E9-F26590616118}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagement.Test", "ContactManagement.Test\ContactManagement.Test.csproj", "{AF534173-E7BB-4411-BF02-57B8D4E400FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManagement.Test", "ContactManagement.Test\ContactManagement.Test.csproj", "{AF534173-E7BB-4411-BF02-57B8D4E400FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagement.Lib", "ContactManagement.Lib\ContactManagement.Lib.csproj", "{EAEC5E73-7804-400B-BECE-CC75DD3A0601}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManagement.Lib", "ContactManagement.Lib\ContactManagement.Lib.csproj", "{EAEC5E73-7804-400B-BECE-CC75DD3A0601}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactManagement.Console", "ContactManagement.Console\ContactManagement.Console.csproj", "{BAE78BB3-6D63-44E8-B71B-9BE612DA9B54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContactManagement.Console", "ContactManagement.Console\ContactManagement.Console.csproj", "{BAE78BB3-6D63-44E8-B71B-9BE612DA9B54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{50D836E5-BCCF-4B6E-A16A-C53A46B64F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50D836E5-BCCF-4B6E-A16A-C53A46B64F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50D836E5-BCCF-4B6E-A16A-C53A46B64F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50D836E5-BCCF-4B6E-A16A-C53A46B64F2C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8CEC6190-11F4-4572-91E9-F26590616118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8CEC6190-11F4-4572-91E9-F26590616118}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CEC6190-11F4-4572-91E9-F26590616118}.Release|Any CPU.ActiveCfg = Release|Any CPU
