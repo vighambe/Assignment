@@ -40,12 +40,12 @@ namespace ContactManagement.Lib.Repository
             return _context.Set<T>().FirstOrDefault(x => x.Id == id);
         }
 
-        public virtual void Add(T entity)
-        {
-            EntityEntry dbEntityEntry = _context.Entry<T>(entity);
-            _context.Set<T>().Add(entity);
-            _context.SaveChanges(true);
-        }
+        //public virtual void Add(T entity)
+        //{
+        //    EntityEntry dbEntityEntry = _context.Entry<T>(entity);
+        //    _context.Set<T>().Add(entity);
+        //    _context.SaveChanges(true);
+        //}
 
         public virtual void Update(T entity)
         {
@@ -64,6 +64,19 @@ namespace ContactManagement.Lib.Repository
            
         }
 
+        public void Add(Contact model)
+        {
+            model.Id = GetNextId();
+            _context.Contacts.Add(model);
+            _context.SaveChanges(true);
 
+        }
+
+        private int GetNextId()
+        {
+            return (_context.Contacts.Count() + 1);
+            
+
+        }
     }
 }

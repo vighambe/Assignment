@@ -51,11 +51,11 @@ namespace ContactManagement.Service.Models
             
             if (String.IsNullOrEmpty(FirstName) )
                 result.Add(GetEmptyErrorValidationResult("FirstName"));
-            else if(FirstName.Length < 3 || FirstName.Length > 100  )
+            else if(FirstName.Length < 3 || FirstName.Length > 20  )
                 result.Add(GetLengthErrorValidationResult("FirstName",3,100));
             if (String.IsNullOrEmpty(LastName))
                 result.Add(GetEmptyErrorValidationResult("LastName"));
-            else if (LastName.Length < 3 || LastName.Length > 100)
+            else if (LastName.Length < 3 || LastName.Length > 20)
                 result.Add(GetLengthErrorValidationResult("LastName", 3, 100));
             if (String.IsNullOrEmpty(Email))
                 result.Add(GetEmptyErrorValidationResult("Email"));
