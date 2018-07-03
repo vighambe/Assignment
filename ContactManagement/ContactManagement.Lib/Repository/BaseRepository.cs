@@ -44,6 +44,7 @@ namespace ContactManagement.Lib.Repository
         {
             EntityEntry dbEntityEntry = _context.Entry<T>(entity);
             _context.Set<T>().Add(entity);
+            _context.SaveChanges(true);
         }
 
         public virtual void Update(T entity)
