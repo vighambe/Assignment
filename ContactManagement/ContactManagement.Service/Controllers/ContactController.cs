@@ -126,7 +126,6 @@ namespace ContactManagement.Service.Controllers
             {
                 throw new Exception("Error occcured while processing your request.");
             }
-            return NotFound("Contact having Id - " + id + " not found");
         }
 
         // DELETE api/values/5
