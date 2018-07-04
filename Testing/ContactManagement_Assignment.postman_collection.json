@@ -34,7 +34,7 @@
 				"header": [],
 				"body": {},
 				"url": {
-					"raw": "http://localhost:5000/api/Contacts/1",
+					"raw": "http://localhost:5000/api/Contacts/3",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -43,7 +43,7 @@
 					"path": [
 						"api",
 						"Contacts",
-						"1"
+						"3"
 					]
 				}
 			},
@@ -118,6 +118,36 @@
 						"api",
 						"Contacts",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Valid",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 1,\n    \"firstName\": \"FirstName_12\",\n    \"lastName\": \"LastName_12\",\n    \"email\": \"FirstName_12.LastName_12@test.com\",\n    \"phoneNumber\": \"1111111134\",\n    \"status\": 1\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/Contacts/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"Contacts",
+						"3"
 					]
 				}
 			},
