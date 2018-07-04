@@ -1,7 +1,4 @@
 ﻿using ContactManagement.Lib.Model;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ContactManagement.Service.Models
 {

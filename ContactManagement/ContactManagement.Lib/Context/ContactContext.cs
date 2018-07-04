@@ -1,8 +1,5 @@
 ﻿using ContactManagement.Lib.Model;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace ContactManagement.Lib.Context
 {

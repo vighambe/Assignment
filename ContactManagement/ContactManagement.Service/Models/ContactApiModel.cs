@@ -1,11 +1,9 @@
 ﻿using ContactManagement.Lib.Model;
-using ContactManagement.Service.Validation;
 using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Net.Mail;
-using System.Text;
 using System.Text.RegularExpressions;
 
 namespace ContactManagement.Service.Models

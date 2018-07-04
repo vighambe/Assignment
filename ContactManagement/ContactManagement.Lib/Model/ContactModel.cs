@@ -1,9 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ContactManagement.Lib.Model
+﻿namespace ContactManagement.Lib.Model
 {
     public enum ContactStatus
     {

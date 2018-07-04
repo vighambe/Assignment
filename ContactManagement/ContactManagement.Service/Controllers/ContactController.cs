@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using ContactManagement.Lib.AbstractRepository;
 using ContactManagement.Service.Models;
@@ -24,7 +23,6 @@ namespace ContactManagement.Service.Controllers
 
         // GET api/contacts
         [HttpGet]
-        //public IEnumerable<Contact> Get()
         public IActionResult Get()
         {
             try
@@ -69,7 +67,7 @@ namespace ContactManagement.Service.Controllers
             return new NotFoundResult();
         }
 
-        // POST api/values
+        // POST api/contacts
         [HttpPost]
         public IActionResult Create([FromBody]ContactApiModel contactApiModel)
         {
@@ -93,7 +91,7 @@ namespace ContactManagement.Service.Controllers
             }
         }
 
-        // PUT api/contact/5
+        // PUT api/contacts/5
         [HttpPut("{id}")]
         public IActionResult Update(int id, [FromBody]ContactApiModel contact)
         {
@@ -128,7 +126,7 @@ namespace ContactManagement.Service.Controllers
             }
         }
 
-        // DELETE api/values/5
+        // DELETE api/contacts/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

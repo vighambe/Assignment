@@ -18,7 +18,6 @@ namespace ContactManagement.Test
         ContactsController _controller = null;
         Mock<IContactRepository> _mockRepo = new Mock<IContactRepository>();
 
-        //[TestInitialize]
         public ContactControllerTest()
         {
             _mockRepo = new Mock<IContactRepository>();
@@ -36,7 +35,6 @@ namespace ContactManagement.Test
 
         private void SimulateValidation(ContactApiModel model)
         {
-            // mimic the behaviour of the model binder which is responsible for Validating the Model
             var validationContext = new ValidationContext(model, null, null);
             var validationResults = new List<ValidationResult>();
             Validator.TryValidateObject(model, validationContext, validationResults, true);
